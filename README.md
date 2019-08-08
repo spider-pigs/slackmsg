@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"time"
 
-    "github.com/spider-pigs/slackmsg"
+	"github.com/spider-pigs/slackmsg"
 )
 
 func main() {
