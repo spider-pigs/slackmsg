@@ -1,5 +1,5 @@
 # slackmsg
-[![Build Status](https://travis-ci.org/spider-pigs/slackmsg.svg?branch=master)](https://travis-ci.org/spider-pigs/slackmsg) [![Go Report Card](https://goreportcard.com/badge/github.com/spider-pigs/slackmsg)](https://goreportcard.com/report/github.com/spider-pigs/slackmsg) [![GoDoc](https://godoc.org/github.com/spider-pigs/slackmsg?status.svg)](https://godoc.org/github.com/spider-pigs/slackmsg)
+[![Build Status](https://travis-ci.org/spider-pigs/slackmsg.svg?branch=master)](https://travis-ci.org/spider-pigs/slackmsg) [![Go Report Card](https://goreportcard.com/badge/github.com/spider-pigs/slackmsg)](https://goreportcard.com/report/github.com/spider-pigs/slackmsg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/47f6b9abfbb04e888cdc9759df7f28e1)](https://www.codacy.com/app/spider-pigs/slackmsg?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=spider-pigs/slackmsg&amp;utm_campaign=Badge_Grade) [![GoDoc](https://godoc.org/github.com/spider-pigs/slackmsg?status.svg)](https://godoc.org/github.com/spider-pigs/slackmsg)
 
 A simple golang library to send a slack message.
 
