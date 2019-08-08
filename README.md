@@ -5,13 +5,13 @@ A simple golang library to send a slack message.
 
 ## Install
 
-```
+```Go
 import "github.com/spider-pigs/slackmsg"
 ```
 
 ## Usage
 
-```
+```Go
 package main
 
 import (
