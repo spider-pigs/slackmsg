@@ -29,7 +29,7 @@ func main() {
 	attachment := slackmsg.Attachment{
 		Text: "And here’s an attachment!",
 	}
-    msg.AddAttachment(attachment)
+	msg.AddAttachment(attachment)
 
 	// dump JSON to verify?
 	fmt.Println(msg.ToJSON())
