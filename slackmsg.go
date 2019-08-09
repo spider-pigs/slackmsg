@@ -103,3 +103,12 @@ func (msg *Message) Send(ctx context.Context, uri string) error {
 
 	return nil
 }
+
+// ToJSON returns the message as a json string
+func (msg *Message) ToJSON() (string, error) {
+	b, err := json.MarshalIndent(msg, "", "    ")
+	if err != nil {
+		return "", err
+	}
+	return string(b), nil
+}

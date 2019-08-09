@@ -26,6 +26,14 @@ func TestSimpleMsg(t *testing.T) {
 	if err == nil {
 		t.Error("error should be set")
 	}
+
+	json, err := msg.ToJSON()
+	if err != nil {
+		t.Error("error should not be set")
+	}
+	if len(json) == 0 {
+		t.Error("JSON string should not be empty")
+	}
 }
 
 func TestActionMsg(t *testing.T) {
@@ -76,5 +84,13 @@ func TestActionMsg(t *testing.T) {
 	err := msg.Send(ctx, webhook)
 	if err == nil {
 		t.Error("error should be set")
+	}
+
+	json, err := msg.ToJSON()
+	if err != nil {
+		t.Error("error should not be set")
+	}
+	if len(json) == 0 {
+		t.Error("JSON string should not be empty")
 	}
 }
