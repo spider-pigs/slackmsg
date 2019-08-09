@@ -31,6 +31,9 @@ func main() {
 	}
 	msg.AddAttachment(attachment)
 
+	// dump JSON to verify?
+	fmt.Println(msg.ToJSON())
+
 	// send message
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
