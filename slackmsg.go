@@ -11,18 +11,58 @@ import (
 
 // Message type
 type Message struct {
-	Text        string       `json:"text,omitempty"`
 	Attachments []Attachment `json:"attachments,omitempty"`
+	Markdown    bool         `json:"mrkdwn,omitempty"`
+	Text        string       `json:"text,omitempty"`
+	Username    string       `json:"username,omitempty"`
 }
 
 // Attachment type
 type Attachment struct {
-	Title      string `json:"title,omitempty"`
-	TitleLink  string `json:"title_link,omitempty"`
-	Text       string `json:"text,omitempty"`
-	AuthorName string `json:"author_name,omitempty"`
-	Color      string `json:"color,omitempty"`
-	Footer     string `json:"footer,omitempty"`
+	Actions    []Action `json:"actions,omitempty"`
+	AuthorName string   `json:"author_name,omitempty"`
+	AuthorIcon string   `json:"author_icon,omitempty"`
+	AuthorLink string   `json:"author_link,omitempty"`
+	CallbackID string   `json:"callback_id,omitempty"`
+	Color      string   `json:"color,omitempty"`
+	Fallback   string   `json:"fallback,omitempty"`
+	Fields     []Field  `json:"fields,omitempty"`
+	Footer     string   `json:"footer,omitempty"`
+	FooterIcon string   `json:"footer_icon,omitempty"`
+	ImageURL   string   `json:"image_url,omitempty"`
+	MarkdownIn []string `json:"mrkdwn_in,omitempty"`
+	Pretext    string   `json:"pretext,omitempty"`
+	Text       string   `json:"text,omitempty"`
+	ThumbURL   string   `json:"thumb_url,omitempty"`
+	Timestamp  int64    `json:"ts,omitempty"`
+	Title      string   `json:"title,omitempty"`
+	TitleLink  string   `json:"title_link,omitempty"`
+	Type       string   `json:"attachment_type,omitempty"`
+}
+
+// Action type
+type Action struct {
+	Confirm Confirm `json:"confirm,omitempty"`
+	Name    string  `json:"name,omitempty"`
+	Style   string  `json:"style,omitempty"`
+	Text    string  `json:"text,omitempty"`
+	Type    string  `json:"type,omitempty"`
+	Value   string  `json:"value,omitempty"`
+}
+
+// Confirm type
+type Confirm struct {
+	DismissText string `json:"dismiss_text,omitempty"`
+	OkText      string `json:"ok_text,omitempty"`
+	Text        string `json:"text,omitempty"`
+	Title       string `json:"title,omitempty"`
+}
+
+// Field type
+type Field struct {
+	Title string `json:"title,omitempty"`
+	Short bool   `json:"short,omitempty"`
+	Value string `json:"value,omitempty"`
 }
 
 // New constructs a new message
