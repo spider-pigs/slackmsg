@@ -47,19 +47,19 @@ func TestActionMsg(t *testing.T) {
 		Color:      "#3AA3E3",
 		Type:       "default",
 		Actions: []slackmsg.Action{
-			slackmsg.Action{
+			{
 				Name:  "game",
 				Text:  "Chess",
 				Type:  "button",
 				Value: "chess",
 			},
-			slackmsg.Action{
+			{
 				Name:  "game",
 				Text:  "Falken's Maze",
 				Type:  "button",
 				Value: "maze",
 			},
-			slackmsg.Action{
+			{
 				Name:  "game",
 				Text:  "Thermonuclear War",
 				Style: "danger",
